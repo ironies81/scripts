@@ -1,0 +1,16 @@
+Cette application vous permet de
+
+Ce logiciel permet de débloquer les fichiers Excel qui restent verrouillés après une utilisation, souvent à cause de fichiers temporaires laissés dans le dossier. Il est particulièrement utile lorsque vous voyez un message comme :
+"Le fichier est verrouillé pour modification par un autre utilisateur"
+
+Fonctionnalités principales:
+Sélection d’un dossier contenant des fichiers Excel.
+Détection automatique des fichiers de verrouillage Excel (commençant par ~$).
+Liste visuelle des fichiers bloquants trouvés.
+Suppression sécurisée de ces fichiers temporaires inutiles.
+Interface simple et accessible pour les utilisateurs non techniques.
+
+Cas d’usage typiques:
+Vous ouvrez un fichier Excel et recevez un message disant qu’il est déjà utilisé.
+Vous avez fermé Excel mais le fichier reste bloqué à cause d’un verrou résiduel.
+Plusieurs utilisateurs partagent un fichier sur un réseau, et il reste bloqué sans raison.

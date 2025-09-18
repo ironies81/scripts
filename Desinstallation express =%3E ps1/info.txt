@@ -1,0 +1,26 @@
+Nom : Désinstallation Express
+Type : Script PowerShell avec interface graphique, lancé via un fichier .bat
+
+Fonction :
+Liste toutes les applications installées sur Windows (64 bits et 32 bits).
+Permet à l’utilisateur de sélectionner une ou plusieurs applications à désinstaller via une interface graphique.
+Exécute la désinstallation en silencieux (/quiet /norestart) si possible.
+Fournit un rapport final indiquant si chaque application a été correctement supprimée ou si la désinstallation a échoué.
+Gère automatiquement les droits administrateur : si l’utilisateur n’est pas admin, une fenêtre UAC s’ouvre pour obtenir les droits nécessaires.
+Le script force l’exécution en contournant la politique d’exécution PowerShell (ExecutionPolicy Bypass) pour fonctionner sans modifier la machine globalement.
+
+Lancement de l’application
+
+1 - Pré-requis :
+Le fichier .ps1 et le fichier .bat doivent se trouver dans le même dossier.
+Le script ne doit pas être exécuté via un chemin réseau, car PowerShell peut bloquer l’exécution de scripts distants.
+
+2 - Exécution :
+Clique droit sur le fichier .bat → Exécuter en tant qu’administrateur.
+Le .bat lance le script .ps1 avec -ExecutionPolicy Bypass et s’assure que les droits administrateur sont actifs.
+L’interface graphique s’ouvre et permet de sélectionner les applications à désinstaller.
+Après la désinstallation, un rapport s’affiche indiquant le succès ou l’échec pour chaque application.
+
+Astuce :
+Toujours garder le .ps1 et le .bat dans le même dossier pour que le chemin relatif fonctionne correctement.
+Éviter les chemins réseau ou les lecteurs mappés, car cela peut bloquer l’exécution des scripts PowerShell.

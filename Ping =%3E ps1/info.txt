@@ -1,0 +1,12 @@
+Cette application vous permet de
+
+- Ping en ps1 : (clic droit exécuter avec PowerShell) qui demande ver qui lancer un ping et qui valide le ping en écrivant l'heure sur chaque ligne de ping
+- La version 4 permet d'afficher l'heure en vert et fait la résolution de nom une ligne sur 2
+- La version 5 ajoute un flushdns toutes les 100 Milliseconds
+- La version ping_patate.ps1 fait un ping toutes les 100 Milliseconds et demande si l'on veux des logs ou pas
+
+Rien de plus embêtant quand on cherche une panne réseau que de croire que le ping continu, car les lignes ce ressembles et de ne pas voir s'il y a du changement.
+
+Fichier Bat :
+@echo off
+powershell -NoProfile -ExecutionPolicy Bypass -File "C:\chemin\ping5.ps1"

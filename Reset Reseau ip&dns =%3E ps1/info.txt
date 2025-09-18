@@ -1,0 +1,21 @@
+🎯 Fonction principale :
+Cette application PowerShell avec interface graphique permet de réinitialiser rapidement la configuration réseau d’un poste Windows via trois commandes système :
+ipconfig /release — Libère l’adresse IP actuelle
+ipconfig /renew — Demande une nouvelle adresse IP au serveur DHCP
+ipconfig /flushdns — Vide le cache DNS local
+
+🖥️ Interface utilisateur :
+Fenêtre simple et intuitive
+Un seul bouton "Démarrer"
+Se désactive automatiquement pendant le traitement
+Une zone d'affichage du journal (log) 
+Montre en temps réel les commandes exécutées et leurs résultats
+Aucun fichier log n’est généré
+
+🔐 Droits nécessaires :
+L’application ne nécessite pas de droits administrateur pour exécuter les commandes réseau
+
+🧰 Utilisation typique :
+Dépannage réseau rapide sur un poste client
+Reconfiguration IP/DNS après changement de réseau ou erreur de résolution
+Script léger, sans installation ni dépendance

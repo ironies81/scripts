@@ -1,0 +1,6 @@
+Cette application vous permet de
+- Sous Windows 11 cela permet de changer le menu du clic droit et de revenir à la version de Windows10
+- Cette modification est réversible
+
+Application, non créer par moi, mais mise à disposition via mon site.
+https://www.sordum.org/14479/windows-11-classic-context-menu-v1-2/

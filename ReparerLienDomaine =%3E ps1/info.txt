@@ -1,0 +1,3 @@
+Cette application vous permet de
+
+- Reconnecter un pc au domaine quand il à perdu l'approbation

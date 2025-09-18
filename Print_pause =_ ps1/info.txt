@@ -1,0 +1,9 @@
+Cette application vous permet de gérer facilement les imprimantes installées sur votre poste. Elle offre les fonctionnalités suivantes :
+
+🔍 Liste des imprimantes : Affiche toutes les imprimantes installées sur l’ordinateur.
+⏸️ Mise en pause : Permet de mettre en pause l’imprimante de votre choix.
+📄 Suivi en temps réel : Affiche la liste des documents en attente d’impression, avec une actualisation automatique toutes les 5 secondes.
+🗑️ Libération de la file d’attente : Supprime tous les documents en attente, évitant ainsi un redémarrage ou une saturation de l’imprimante.
+
+Cet outil est idéal pour les techniciens ou utilisateurs souhaitant gérer rapidement les files d’attente sans passer par l’interface classique de Windows.
+Cette application peut également servir de solution de type « impressions sécurisées », en vous permettant de contrôler manuellement quand les documents sont libérés à l'impression.

@@ -1,0 +1,27 @@
+Application : Mise à jour du carnet d’adresses Outlook
+🎯 Objectif
+Cette application permet de forcer la mise à jour du carnet d’adresses local (OAB – Offline Address Book) dans Outlook, directement depuis un petit outil graphique.
+Elle automatise l’équivalent d’un Envoyer/Recevoir → Télécharger le carnet d’adresses pour toutes les boîtes configurées dans le profil utilisateur.
+
+🔧 Fonctionnalités
+Interface graphique simple (WinForms).
+Bouton "Mise à jour carnet d’adresse local".
+Barre de progression affichant l’avancement.
+Zone de log en temps réel listant les boîtes synchronisées et l’état (succès/erreur).
+Fonctionne aussi bien en Exchange on-premise qu’en Office 365 (si un OAB est encore utilisé).
+
+✅ Utilité
+Garantir que l’utilisateur dispose des derniers contacts et listes de distribution sans attendre la mise à jour automatique (qui ne s’exécute qu’une fois par jour).
+Éviter les erreurs d’envoi à cause d’une GAL (Global Address List) non à jour.
+Support IT : outil rapide pour diagnostiquer ou corriger un décalage entre Outlook et le serveur Exchange.
+Gain de temps : plus besoin de naviguer dans les menus d’Outlook, un clic suffit.
+
+🛠 Cas concrets
+Nouvel employé ajouté dans Active Directory / Azure AD → l’utilisateur peut le voir immédiatement sans attendre 24h.
+Changement de nom ou d’adresse mail d’un collaborateur → la correction est visible tout de suite.
+Ajout ou modification de listes de distribution → indispensable dans les environnements où les listes évoluent souvent.
+Environnement hybride (Exchange On-Prem + 365) → utile pour vérifier la bonne réplication des OAB entre serveurs et postes clients.
+Support de proximité → un technicien peut rapidement lancer une mise à jour lors d’une demande utilisateur.
+
+👉 En résumé :
+C’est un outil simple mais efficace qui assure que le carnet d’adresses Outlook est toujours synchronisé avec la version la plus récente du serveur, réduisant les risques d’erreurs et améliorant la réactivité dans les environnements Exchange.

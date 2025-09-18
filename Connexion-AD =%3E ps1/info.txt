@@ -1,0 +1,3 @@
+Cette application vous permet de
+- connecter un pc au domaine
+- sans passé par les paramètres de Windows

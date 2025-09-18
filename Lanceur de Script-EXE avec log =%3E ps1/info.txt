@@ -1,0 +1,12 @@
+Cette application PowerShell avec une interface graphique (WinForm) a pour utilité principale de fournir une interface graphique simple et conviviale permettant à un utilisateur de :
+
+- Sélectionner un fichier script (.ps1, .bat, .cmd) ou un exécutable (.exe) à lancer facilement via un explorateur de fichiers.
+- Exécuter ce fichier choisi et capturer sa sortie en temps réel.
+- Afficher cette sortie sous forme de logs colorés dans une fenêtre pour une lecture plus claire et agréable.
+- Automatiser la relance du script ou exécutable toutes les 5 minutes via une option activable, adaptée pour les tâches récurrentes ou la supervision.
+
+Cette application permet donc d’allier la puissance de scripts classiques en ligne de commande avec la facilité d’une interface graphique, simplifiant l’utilisation et la visualisation des résultats, notamment dans un contexte professionnel ou pour des utilisateurs non experts en console. Elle exploite les capacités de Windows Forms pour gérer les interactions utilisateurs, les affichages enrichis et les événements sans nécessiter d’environnement de développement complexe ni de programmation lourde.
+
+En résumé, c’est un outil simple, efficace, et personnalisable pour intégrer et superviser l’exécution de scripts ou d’applications en mode graphique sous Windows, tout en bénéficiant d’un affichage clair et d’une gestion pratique des relances et des logs.
+
+Exemple en capture d'écran avec sélection de speedtest.exe, relancer toutes les 5 minutes pour une surveillance du débit internet.

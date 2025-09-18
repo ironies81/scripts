@@ -1,0 +1,40 @@
+🧾 Résumé de l'utilité du logiciel "Scan Dossier"
+
+🎯 Objectif principal
+Ce logiciel permet d’analyser facilement un dossier et de générer trois rapports CSV complets, utiles pour :
+La gestion de données,
+L’audit de fichiers,
+Le diagnostic de structure de dossiers,
+La préparation de sauvegardes ou de synchronisations.
+
+⚙️ Fonctionnalités principales
+Exploration manuelle via interface graphique :
+L'utilisateur choisit un dossier via un bouton "Parcourir".
+Interface simple et portable, sans installation complexe.
+
+3 rapports automatiques au format CSV :
+📁 simple-scan.csv : Liste des dossiers de premier niveau.
+📂 expert-scan.csv : Liste de tous les dossiers et sous-dossiers.
+📄 files-scan.csv : Liste de tous les fichiers avec leur chemin complet.
+
+Filtrage par date (facultatif) :
+Possibilité de ne scanner que les dossiers/fichiers modifiés ou créés après une certaine date.
+
+Affichage dynamique :
+Affiche à l’écran les chemins des fichiers générés.
+Indique le nombre de dossiers et de fichiers trouvés.
+
+Bouton d’accès rapide :
+Un bouton permet d’ouvrir automatiquement le dossier contenant les rapports (C:\temps).
+
+💼 Cas d’usage typiques
+Techniciens ou administrateurs voulant documenter la structure d’un disque, serveur ou NAS.
+Archivage, préparation à des exports ou migrations de données.
+Inventaire de contenu pour déterminer la volumétrie ou la profondeur d’arborescence.
+Vérification de sauvegardes (quels fichiers sont présents / absents, et où).
+
+📦 Avantages
+Aucun logiciel tiers requis, 100% PowerShell.
+Converti en .exe autonome.
+Rapide, simple, portable, utilisable sans droits admin.
+Les fichiers CSV sont exploitables avec Excel ou tout autre tableur.

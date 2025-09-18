@@ -1,0 +1,13 @@
+Cet outil PowerShell (disponible aussi en exécutable autonome) automatise le changement de propriétaire sur une arborescence de fichiers et dossiers Windows.
+
+- Le répertoire de départ est sélectionné via une interface graphique.
+- L’administrateur choisit de cibler les fichiers, les dossiers, ou les deux.
+- Le script applique récursivement comme propriétaire le compte ayant validé l’UAC.
+
+Ce type d’outil est particulièrement utile pour :
+
+- Reprendre la main sur des arborescences verrouillées,
+- Gérer des données héritées d’anciens utilisateurs,
+- Simplifier des opérations de migration ou de nettoyage de serveurs.
+
+Grâce à l’UAC intégré, il garantit que les droits administrateur sont respectés tout en restant simple d’utilisation.

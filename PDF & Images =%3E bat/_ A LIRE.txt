@@ -1,0 +1,17 @@
+Cette application vous permet de
+- Convertir des images en PDF
+- Découper un PDF de 10 pages par exemple en 10 PDF de 1 page
+- Intégré dans le menu clic droit de la souris
+Installation :  
+1. créer le dossier c:\_install
+2. copier les 2 scripts bat (img2pdf.bat & cut_pdf.bat) dans le répertoire _install
+3. fusionner les 2 fichiers DecouperPDF.reg & Image2PDF.reg pour ajouter les commandes au menu clic droit sur un PDF ou image
+4. installer pdftk_server-2.02-win-setup.exe & ImageMagick-7.1.1-43-Q16-HDRI-x64-dll.exe uniquement cocher l'ajout dans le PATH
+La solution est opérationnelle !
+Pour utiliser les scripts, faites un clic droit sur une image ou un PDF à découper
+==========================================
+Si vous souhaitez modifier la destination pour qu'elle soit statique dans les 2 scripts, voici la ligne a modifier dans les 2 scripts bat
+- Destination à côté du fichier original image ou PDF :
+set "OUTPUT_DIR=%PDF_DIR%%PDF_NAME%"
+- Destination fixe pour le découpage de PDF et image 2 PDF :
+set "OUTPUT_DIR=\\server\COMMUN\%PDF_NAME%"

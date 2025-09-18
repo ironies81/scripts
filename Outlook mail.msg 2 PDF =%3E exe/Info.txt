@@ -1,0 +1,10 @@
+Cette application vous permet de
+
+Convertir un mail extrait d'Outlook qui est en format .msg et de le convertir en .pdf ; les pièces jointes ne sont évidemment pas prises en charge à ce moment.
+
+L'installateur exe de ma confection va installé ceci et l'option sera disponible par la suite en utilisant le clic droit sur le fichier .msg
+
+1_ Copie wkhtmltox-0.12.6-1.msvc2015-win64.exe dans C:\Program Files
+2_ Lancer MAJ_path_wkhtmltopdf.bat
+3_ Copier ConvertMsgToPdf.ps1 dans C:\_install
+4_ Fusionner msg_2_pdf.reg

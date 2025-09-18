@@ -1,0 +1,12 @@
+Cette application vous permet de
+- Liste toutes les boites mails présentes dans Outlook, mêmes les BAL partagés
+- Choix du dossier à nettoyer (ne fait pas les sous dossiers)
+- Permet de supprimer les doublons de mails (Objet du mail pris en compte)
+- Déplacer les mails en doublons dans la corbeille
+- Avoir un txt de logs des mails déplacé
+
+Paramètres à modifier dans dcomcnfg.exe en images
+Utilisation de l'application :
+Lancer CleanOutlookDuplicates.exe
+
+- Dans le résultat, ne pas prendre en compte la ligne "erreur"

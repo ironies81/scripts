@@ -1,0 +1,9 @@
+Cette application vous permet de
+
+Convertir des images HEIC en JPEG rapidement et pas lot aussi
+Intégration dans le menu du clic droit de la souris
+Installation :
+1 Créer c:\_install
+2 Installer ImageMagick : ImageMagick-7.1.1-45-Q16-HDRI-x64-static.exe
+3 copier heic2jpeg.bat dans c:\_install
+4 Fusionne le regedit : import_heic2jpeg.reg

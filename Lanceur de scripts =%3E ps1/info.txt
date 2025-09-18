@@ -1,0 +1,48 @@
+Lanceur graphique de scripts avec exécution automatique
+
+🎯 Objectif principal :
+Permettre d’exécuter automatiquement et séquentiellement tous les fichiers .ps1 et .bat présents dans un dossier, via une interface graphique simple, avec possibilité de :
+se souvenir du dernier dossier
+démarrer automatiquement au lancement
+exécuter en boucle infinie
+afficher les journaux en temps réel
+
+🧩 Fonctionnalités principales :
+🗂️ Sélection du dossier	
+	-Permet de choisir le dossier contenant les scripts à exécuter
+💾 Mémorisation	
+	-Le programme enregistre les options cochées et le chemin dans C:\_install\config_script_launcher.json
+🚀 Auto-démarrage
+	-Si l'option "Auto Start" est cochée, le programme exécute automatiquement les scripts au prochain lancement
+🔁 Exécution en boucle
+	-Si l’option "Exécuter en boucle infinie" est cochée, les scripts sont relancés indéfiniment
+📋 Affichage des logs
+	-Une fenêtre de log affiche l'état de chaque script exécuté, avec horodatage
+📝 Journalisation persistante
+	-Les logs sont aussi enregistrés dans C:\_install\log_execution.txt
+
+📁 Structure des fichiers :
+C:\_install\config_script_launcher.json
+	-Contient le chemin du dernier dossier utilisé + options sélectionnées
+C:\_install\log_execution.txt
+	-Contient le journal complet des exécutions de scripts
+Dossier de scripts (.ps1/.bat)
+	-Tous les scripts à exécuter, triés par nom croissant
+
+⚙️ Comportement à l’exécution :
+L’utilisateur ouvre le programme.
+
+Il choisit un dossier contenant des scripts.
+Il peut cocher :
+🔁 boucle infinie
+🚀 auto démarrage
+
+Il clique sur "Lancer l’exécution".
+Chaque script est lancé l’un après l’autre.
+
+À la fin :
+Soit l’exécution s’arrête (mode normal)
+Soit elle recommence (mode boucle infinie)
+Lors des prochains lancements, le programme peut :
+Relancer automatiquement les scripts
+Utiliser les dernières options cochées

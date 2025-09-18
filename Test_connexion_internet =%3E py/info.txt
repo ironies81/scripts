@@ -1,0 +1,5 @@
+Cette application vous permet de
+
+- Connaitre votre IP V4
+- Savoir si vous avez des coupures internet (logs)
+- faire 3 ping simulyanés

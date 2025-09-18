@@ -1,0 +1,14 @@
+Fonctionnalités principales :
+
+- Liste automatiquement les scripts .ps1 présents dans le même dossier que le lanceur (fonctionne aussi bien en .ps1 qu’en .exe grâce à la solution hybride).
+- Permet de parcourir d’autres dossiers pour sélectionner un script à exécuter.
+- Exécute les scripts sélectionnés avec -ExecutionPolicy Bypass, uniquement pour cette exécution, et avec élévation UAC si nécessaire.
+- Interface simple avec boutons Parcourir, Exécuter et Quitter, utilisable par n’importe quel utilisateur sans ligne de commande.
+
+Utilité principale :
+
+- Le script permet de lancer des scripts PowerShell sans modifier de manière permanente la politique d’exécution (ExecutionPolicy) de l’ordinateur.
+- Pas besoin de réactiver le bypass global ni de toucher à la sécurité de PowerShell.
+- Chaque script est exécuté localement et temporairement avec l’autorisation nécessaire, ce qui reste sécurisé.
+
+En résumé : un moyen pratique et sûr de gérer et exécuter des scripts PowerShell sur différents postes sans compromettre la sécurité du système.

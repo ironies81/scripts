@@ -1,0 +1,8 @@
+Cette application vous permet de
+
+- Vous aurez un message du début si les fonctionnalités nécessaires ne sont pas installées avec un tuto
+- Lister tous les pc du domaine dans un export CSV
+- Avoir leur version d'OS
+- Avoir leur date de dernière communication avec l'AD
+
+Cela peu vous permettre de supprimer les anciens pc du domaine

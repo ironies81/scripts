@@ -1,0 +1,35 @@
+Ce script PowerShell est un outil complet de nettoyage et d’optimisation de Windows, avec une interface graphique simple.
+Il permet de :
+
+Exécuter un nettoyage avancé du système (fichiers temporaires, cache, Windows.old, WU cache, Prefetch, etc.).
+Configurer Cleanmgr (l’outil intégré de nettoyage de disque) avec les options avancées activées.
+Désactiver l’hibernation (libère l’espace réservé à hiberfil.sys).
+Vérifier la RAM et désactiver le pagefile.sys si plus de 16 Go de RAM.
+Lancer DISM pour nettoyer les composants Windows et réduire la taille du dossier WinSxS.
+Supprimer les caches Edge/IE, Prefetch et WER (rapports d’erreurs).
+
+Offrir une interface graphique avec :
+Zone de log en temps réel (couleurs pour les messages).
+Bouton unique pour lancer le nettoyage.
+Menu avec "Fichier → Quitter" et "Aide → A propos" (contact + site web).
+
+Il s'exécute avec élévation automatique en administrateur si nécessaire, pour éviter les erreurs de permissions.
+
+1	powercfg -h off
+	=> Désactive l’hibernation et supprime hiberfil.sys.
+2	Écriture dans la base de registre (HKLM:\...\VolumeCaches)
+	=> Active toutes les options de Cleanmgr pour un nettoyage complet.
+3	cleanmgr.exe /sagerun:1
+	=> Lance l’outil de nettoyage disque en mode silencieux.
+4	Get-CimInstance Win32_PageFileUsage + suppression du pagefile si RAM > 16 Go
+	=> Optimise l’espace disque si le swap n’est plus utile.
+5	Dism.exe /Online /Cleanup-Image …
+	=> Nettoie et compresse les composants de Windows (WinSxS).
+6	Remove-Item (Temp utilisateur et système)
+	=> Supprime les fichiers temporaires.
+7	Stop-Service wuauserv + suppression SoftwareDistribution
+	=> Vide le cache de Windows Update, puis redémarre le service.
+8	Suppression C:\Windows.old si présent
+	=> Libère de l’espace après une mise à jour majeure de Windows.
+9	Suppression cache Edge, Prefetch, WER
+	=> Accélère le système et libère de l’espace.

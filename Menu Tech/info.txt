@@ -1,0 +1,20 @@
+🎯 Résumé du menu :
+
+Voici un lanceur d’applications placé dans la zone de notification Windows (près de l’horloge).
+- Une petite icône discrète apparaît en bas à droite.
+- Quand on cliques droit dessus, on obtiens un menu contextuel avec des catégories bien séparées :
+	- Outils fichiers (gestion PS1, propriétaires, scan dossiers)
+	- Réseau (connexion domaine, reset réseau, ping, etc.)
+	- Divers (convertisseur, désinstallation, utilitaires, etc.)
+
+En bas du menu, deux options supplémentaires :
+- À propos → ouvre une petite fenêtre avec ton email et le site web
+- Quitter → ferme l’icône du lanceur dans la zone de notification
+
+🛠️ Utilité concrète :
+Gain de temps : plus besoin d’ouvrir l’explorateur Windows ou retenir les chemins → tout est accessible en deux clics.
+Centralisation : tous les scripts et outils (réseau, fichiers, utilitaires) sont regroupés au même endroit.
+Discrétion : l’outil ne prend pas de place sur le bureau ni dans la barre des tâches, il reste en arrière-plan.
+Support intégré : via “À propos”, un moyen de contact et un lien de site.
+
+Portabilité : le script détecte son dossier, tu peux copier le pack (scripts + exe + icône) sur une clé USB ou un autre PC → ça fonctionne tel quel.

@@ -1,0 +1,6 @@
+Cette application vous permet de
+- renseigner le nom du serveur qui partage un ou des imprimantes
+- lister les imprimantes partagées
+- lister les imprimantes installées sur le poste
+- installer de nouvelles imprimantes
+- désinstaller des imprimantes du poste

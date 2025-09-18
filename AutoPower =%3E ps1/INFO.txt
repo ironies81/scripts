@@ -1,0 +1,23 @@
+Fonction principale :
+
+Affichage dans la barre des tâches
+Le script crée une notification (systray) avec une icône personnalisée et un menu contextuel comprenant une option "Quitter".
+Détection automatique de la source d'alimentation
+À l’aide d’un timer Windows Forms qui s’exécute toutes les 5 secondes, il détecte si l’ordinateur est branché sur le secteur ou fonctionne sur batterie.
+Changement automatique du plan d’alimentation
+Lorsqu’il est branché, il passe au plan Performances maximales (GUID : 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c).
+Lorsqu’il est sur batterie, il bascule sur Économie d’énergie (GUID : a1841308-3541-4fab-bc81-f71556f20b4a).
+Notifications visuelles pour l’utilisateur
+Chaque basculement de plan est accompagné d’une notification ballon indiquant le nouveau mode actif, à condition que le plan ou la source change réellement. Cela évite les messages inutiles en cas de redondance.
+Gestion tactile et propre
+L’option "Quitter" dans le menu contextuel désactive proprement l’icône et arrête le script en cours.
+
+Pourquoi c’est utile :
+
+Automatisation complète : plus besoin de changer manuellement les plans selon que l’on est sur secteur ou sur batterie.
+Économie d’énergie optimisée : en mode batterie, l’ordinateur est en mode faible consommation ; en secteur, il profite des performances maximales.
+Expérience utilisateur agréable : les notifications et l’icône rendent l’ensemble intuitif et discret.
+Fiable : grâce au suivi de la dernière source d’alimentation et du dernier plan utilisé, les changements ne se déclenchent que si nécessaire — pas de notifications superflues.
+
+Le script est prévu pour fonctionner depuis le dossier C:\_install\AutoPower\contenue du 7zip
+Pour un démarrage automatique, placer un raccourci du .exe dans ce dossier C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp

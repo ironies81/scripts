@@ -1,0 +1,4 @@
+Cette application vous permet de
+- ajouter une ligne au fichier HOST
+- faire un ipconfig/flushdns
+- vérifier si l'enregistrement est bien en place

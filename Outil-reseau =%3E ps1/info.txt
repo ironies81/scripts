@@ -1,0 +1,10 @@
+Cette application vous permet de
+
+- Afficher les informations de toutes les cartes réseau du pc
+- Faire un ipconfig/release puis ipconfig/renew (relâcher et renouveler toutes les adresses IP en DHCP de toutes vos cartes réseau)
+- Faire un ipconfig/flushdns (vide le cash DNS de toutes vos cartes réseau)
+- Modifier les paramétrages IP de la carte réseau choisis
+- Activer le DHCP sur la carte réseau de votre choix
+- Faire un poing continu vers qui vous voulez
+- Utiliser la fonction Tracert (suivre le chemin d'un paquet sur le réseau)
+- Résoudre des noms DNS
