@@ -1,0 +1,40 @@
+🔧 1. Installer le module ps2exe dans PowerShell
+Ouvre une console PowerShell en tant qu’administrateur et lance :
+=> PowerShell
+Install-Module -Name ps2exe -Scope CurrentUser -Force
+🔐 Si tu as un message de sécurité concernant un dépôt non approuvé, tape A (oui pour tout) pour accepter.
+__________________________________________________________
+📦 2. Vérifie que le module est bien installé
+Toujours dans PowerShell :
+=> PowerShell
+Get-Module -ListAvailable ps2exe
+S'il apparaît, c’est bon. Sinon relance la commande d'installation.
+__________________________________________________________
+🧙‍♂️ 3. Conversion .ps1 en .exe avec ps2exe
+Dans PowerShell, adapte ce chemin à ton script :
+=> PowerShell
+ps2exe -inputFile "C:\chemin\vers\ton_script.ps1" `
+       -outputFile "C:\chemin\vers\ton_script.exe" `
+       -noConsole -iconFile "C:\chemin\vers\une_icone.ico" `
+       -x64
+🟡 L’option -noConsole évite d’avoir une fenêtre noire en fond.
+🟡 L’option -x64 génère une appli pour Windows 64 bits (recommandé).
+🟡 Tu peux ne pas mettre -iconFile si tu ne veux pas personnaliser l’icône.
+
+Site pour les icônes:
+https://icon-icons.com/fr/
+__________________________________________________________
+🧠 Remarques importantes
+Si tu utilises [Microsoft.VisualBasic.Interaction], ajoute toujours :
+=> PowerShell
+Add-Type -AssemblyName Microsoft.VisualBasic
+Si tu veux éviter ce message :
+“Cette application ne peut pas s’exécuter sur votre PC”,
+assure-toi que tu compiles avec -x64 sur un Windows 64 bits, et que tu n’exécutes pas un .exe 32 bits sans compatibilité.
+__________________________________________________________
+🚀 Lancement
+Double-clique ton .exe, ou distribue-le à tes utilisateurs.
+=====================================
+Si non utilise mon logiciel => convert_ps1_to.exe
+Vérification et installation des dépendances (ps2exe, PowerShell 5+ et Les assemblies .NET)
+Fait maison !

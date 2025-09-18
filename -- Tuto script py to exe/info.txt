@@ -1,0 +1,55 @@
+Tutoriel simple : convertir un fichier Python (.py) en exécutable Windows (.exe)
+Voici un guide pas à pas, accessible à tous, pour transformer ton script Python en un programme exécutable (.exe) que tu pourras partager et utiliser sur n’importe quel ordinateur Windows, même sans Python installé.
+1. Pourquoi convertir un .py en .exe ?
+- Pour exécuter ton programme sur un PC sans installer Python.
+- Pour faciliter le partage avec des amis, collègues ou clients.
+- Pour distribuer une application autonome, simple à utiliser.
+2. Prérequis
+Avoir Python installé sur ton ordinateur (version 3.6 ou supérieure recommandée).
+Savoir où se trouve ton fichier .py à convertir.
+3. Installer PyInstaller
+PyInstaller est l’outil le plus simple et populaire pour cette tâche.
+Ouvre l’invite de commandes (cmd) et tape :
+
+pip install pyinstaller
+
+Vérifie l’installation avec :
+
+pyinstaller --version
+
+Si un numéro de version s’affiche, c’est tout bon !
+4. Convertir ton script en .exe
+Place-toi dans le dossier où se trouve ton script avec la commande cd (exemple : cd C:\Users\TonNom\Documents\MonProjet).
+Tape la commande suivante (remplace mon_script.py par le nom de ton fichier) :
+
+pyinstaller --onefile mon_script.py
+
+L’option --onefile permet de créer un seul fichier .exe, facile à distribuer.
+5. Où trouver ton .exe ?
+Après quelques secondes/minutes, un dossier dist apparaît dans le même dossier que ton script.
+Ton exécutable s’appelle mon_script.exe et se trouve dans ce dossier dist.
+6. Astuces et options utiles
+Pour ajouter une icône à ton .exe :
+pyinstaller --onefile --icon=chemin/vers/mon_icone.ico mon_script.py
+Pour cacher la console (utile pour les applis graphiques) :
+
+pyinstaller --onefile --windowed mon_script.py
+
+Si tu préfères une interface graphique pour la conversion, teste [auto-py-to-exe], qui simplifie encore plus le processus.
+7. Limitations et conseils
+Le fichier .exe généré peut être volumineux (car il embarque Python et toutes les dépendances).
+Certaines bibliothèques très spécifiques peuvent demander des réglages supplémentaires.
+Le code source n’est pas totalement protégé (il existe des outils pour extraire le code d’un .exe).
+
+Résumé rapide
+Installe PyInstaller :
+pip install pyinstaller
+Va dans le dossier de ton script :
+cd chemin/vers/ton/dossier
+Convertis ton script :
+pyinstaller --onefile mon_script.py
+Récupère le .exe dans le dossier dist !
+=====================================
+Si non utilise mon logiciel => convert_py_to.exe
+Fait maison !
+Qui vérifie et installe automatiquement pyinstaller si ne n'est pas le cas
