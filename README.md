@@ -1,0 +1,8 @@
+Bienvenue !
+
+Vous trouverez ici des logiciels que j’ai créés moi-même, avec l’aide de l’intelligence artificielle (notamment ChatGPT et Perplexity).
+Ces applications sont conçues pour être utiles aussi bien à la maison que dans un environnement professionnel. Je vous recommande de les analyser avec votre antivirus habituel afin de vérifier leur compatibilité avec les politiques de sécurité en vigueur dans votre structure.
+Il s'agit principalement d’outils destinés à simplifier certaines tâches courantes liées au dépannage, aux tests ou aux installations informatiques.
+Certaines applications ont été développées en réponse à des besoins spécifiques sur mon lieu de travail, et sont actuellement utilisées en production.
+
+Adresse du flux RSS : https://politepol.com/fd/kFMgpyNkFbr8.xml
